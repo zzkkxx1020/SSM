@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cm.dao.AdminDao">
+    <select id="getAllAdmin" resultType="AdminModel">
+        select * from admin
+    </select>
+    <select id="getById" resultType="AdminModel">
+        SELECT * FROM admin where admin_id = #{id}
+    </select>
+</mapper>
